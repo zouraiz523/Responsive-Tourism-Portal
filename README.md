@@ -10,7 +10,7 @@ A responsive tourism website showcasing modern frontend design and interactive f
 - **Scroll-to-Top Button:** Quickly return to the top of the page.  
 
 ### Live Demo:  
-[Check out the live demo here!](https://6763303f5b43c26ed7e8d907--keen-valkyrie-20fbc7.netlify.app/b)  
+[Check out the live demo here!](https://6763303f5b43c26ed7e8d907--keen-valkyrie-20fbc7.netlify.app/)  
 
 ### Installation:  
 1. Clone the repository:  
