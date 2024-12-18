@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WANDERLUST</title>
+
+        <!-- Font Awesome 5 for Icons (Use only one link to prevent conflicts) -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+
+        <!-- jQuery (ensure it loads correctly) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- EmailJS -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+
+        <!-- Custom Stylesheets -->
+        <link rel="stylesheet" href="contact.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/apple-touch-icon.png"
+        />
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+</html>
+
+    <body
+        onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
+    >
+        <!--navbar-->
+        <nav class="navbar glass" style="height: 70px">
+            <span
+                ><a href="#home" style="display: flex; align-items: center"
+                    ><img
+                        class="img2"
+                        src="./img/mountain.png"
+                        width="40"
+                        style="margin: -25px -10px -25px -20px"
+                    />
+                    <h1 class="logo">&nbsp;WANDERLUST</h1></a
+                ></span
+            >
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" id="pri" class="active cir_border">Home</a>
+                </li>
+                
+                <li>
+                    <a href="#explore" id="tri" class="cir_border">Explore</a>
+                </li>
+                <li>
+                    <a href="#tours" id="quad" class="cir_border">Tours</a>
+                </li>
+                <li><a href="#about" id="quint" class="cir_border">About</a></li>
+            
+                <li>
+                    <a href="#contact" id="hept" class="cir_border">Contact</a>
+                </li>
+                <li>
+                    <div>
+                        <input
+                            type="checkbox"
+                            class="checkbox dark"
+                            id="checkbox"
+                        />
+                        <label for="checkbox" class="label">
+                            <i class="fa fa-moon-o"></i>
+                            <i class="fa fa-sun-o"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+        </nav>
+        <!--navbar-->
+
+        <header id="home">
+            <div class="header-content">
+                <h2 id="quote">Discover the Vibrant Wonders</h2>
+        
+                <h1>A JOURNEY TO REMEMBER</h1>
+                <br>
+                <a
+                    href="#explore"
+                    class="ctn"
+                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+                    >Explore Now</a>
+            </div>
+        </header>
+        
+
+<!--Explore-->
+<section class="explore" id="explore">
+    <div class="explore-content">
+        <h1>DISCOVER NEW HORIZONS</h1>
+        <div class="line"></div>
+        <p>
+            “Travel opens your heart, broadens your mind, and fills your life
+            with stories to tell.” – Paula Bendfeldt <br />Let the thrill of
+            exploration inspire your next adventure and help you reconnect with
+            the beauty of the world.
+        </p>
+        <a href="#" class="ctn">Start Your Journey</a>
+    </div>
+</section>
+<!--Explore-->
+
+        <!--tours-->
+<section class="tours" id="tours">
+    <div class="container row">
+        <div class="col content-col">
+            <h1 class="font-color">Upcoming Tours & Destinations</h1>
+            <div class="line"></div>
+            <p>
+                Wed 28 Sept 2023: Explore the vibrant Port of Spain City and enjoy a breathtaking view from Birdseye Fort. <br />
+                Sat 1 Oct 2023: Discover the mesmerizing Gasparee Caves. <br />
+                Tues 4 Oct 2023: Experience the serene beauty of Trinidad’s North Coast. <br />
+                And much more awaits you...
+            </p>
+            <a href="#" class="ctn">Learn more</a>
+        </div>
+        <div class="image-col">
+            <div class="image-gallery">
+                <img src="./img/img3.png" alt="Port of Spain City" />
+                <img src="./img/img4.png" alt="Gasparee Caves" />
+                <img src="./img/img5.png" alt="Trinidad North Coast" />
+                <img src="./img/img6.png" alt="Beautiful Destination" />
+            </div>
+        </div>
+    </div>
+    <br /><br /><br /><br />
+</section>
+<!--tours-->
+
+
+        <!-- About -->
+        <section id="about">
+            <div class="title">
+                <h1 class="font-color">About Us</h1>
+                <div class="line"></div>
+            </div>
+            <br />
+            <div id="about_us">
+                <div class="boxx">
+                    <div class="containerx">
+                        <input type="radio" name="slider" id="item-1" checked />
+                        <input type="radio" name="slider" id="item-2" />
+                        <input type="radio" name="slider" id="item-3" />
+                        <div class="cards">
+                            <label class="cardt" for="item-1" id="col-img-1">
+                                <img src="https://awe365.com/wp-content/uploads/2016/11/Mt-Rainier-fotolia-sml-L-e1454970307543-620x413.jpg" alt="Explore New Heights" />
+                            </label>
+                            <label class="cardt" for="item-2" id="col-img-2">
+                                <img src="./img/carousel-img5.jpg" alt="Unforgettable Journeys" />
+                            </label>
+                            <label class="cardt" for="item-3" id="col-img-3">
+                                <img src="./img/carousel-img6.jpg" alt="Breathtaking Adventures" />
+                            </label>
+                        </div>
+                    </div>
+                    <span id="about-quad">
+                        <a href="#home">
+                            <center>
+                                <h1 style="font-family: var(--ff-montserrat); color: white;">
+                                    Discover Your
+                                </h1>
+                                <br />
+                                <img
+                                    class="img2"
+                                    src="./img/mountain_dark.jpg"
+                                    width="200"
+                                    style="border-radius: 12%;"
+                                    alt="Mountain Adventure"
+                                />
+                                <br />
+                                <h1 class="logo" style="font-size: 50px;">
+                                    Next Adventure
+                                </h1>
+                            </center>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!-- About -->
+        
+
+        <!-- contact  -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123  Street</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@serenity.com</p>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+
+        <!-- up scroll -->
+        <i class="arrow"  onclick="topFunction()" id="upbtn"></i>
+        <!-- end -->
+        <!--footer-->
+        <section class="footer">
+            <span
+                > Created By Developer Zouraiz | &#169; 2024 All rights reserved.</span
+            >
+            <div class="social">
+                <li>
+                    <a href="#" target="_blank" rel="noreferrer">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                
+            </div>
+        </section>
+        <!--footer-->
+
+        <script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const navlinks = document.querySelector(".nav-links");
+
+            menuBtn.addEventListener("click", () => {
+                navlinks.classList.toggle("mobile-menu");
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
